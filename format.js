@@ -11,4 +11,4 @@ Object.entries(claims).forEach(value => {
   output.push(current.join('\n'), "\n");
 })
 
-writeFileSync(join(process.cwd(), "User Friendly.txt"), output.join('\n'));
+writeFileSync(join(process.cwd(), "UserData.txt"), output.join('\n'));
