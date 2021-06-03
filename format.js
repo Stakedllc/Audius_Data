@@ -7,7 +7,7 @@ const output = [`Merkle Root: ${merkleRoot}`, `Token Total: ${tokenTotal}`, '\n'
 Object.entries(claims).forEach(value => {
   const [address, account] = value;
   const { index, amount, proof } = account;
-  const current = [`index = ${index}`, `address = ${address}`, `amount = ${amount}`, `merkleProof = [${proof.join(',')}]`];
+  const current = [`# index\n${index}`, `# address\n${address}`, `# amount\n${amount}`, `# merkleProof\n[${proof.join(',')}]`];
   output.push(current.join('\n'), "\n");
 })
 
